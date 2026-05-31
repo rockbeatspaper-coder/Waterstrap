@@ -1,83 +1,120 @@
 # 🌊 Waterstrap
-### *A vibe-coded, FPS-focused, overpowered Bloxstrap clone — built with GPT 5.5 Extra High.*
 
-Waterstrap is a modern, fast, aesthetic Roblox bootstrapper designed for players who want **maximum FPS**, **zero desync**, **clean modding**, and **full control** over their Roblox experience.  
-It takes the idea of Bloxstrap and pushes it into a whole new era.
+### *A vibe-coded, FPS-focused, overpowered Bloxstrap fork — built with GPT 5.5 Extra High energy.*
+
+Waterstrap is a modern Roblox bootstrapper built for players who want more control over performance, FastFlags, local mods, Roblox versions, and launch behavior.
+
+It takes the Bloxstrap idea and pushes it toward a cleaner, faster, FPS-first experience.
 
 ---
 
 ## ✨ Features
 
 ### 🎮 FPS-Focused Unlocker
-Optimized specifically for Roblox FPS titles:
 
-- Ultra-stable frame pacing  
-- No physics drift  
-- No timing hooks that trigger SAB/BAC  
-- Competitive-friendly sensitivity behavior  
+Waterstrap includes FPS-focused tuning for Roblox games where frame pacing matters.
+
+- FPS cap presets
+- Smooth frame pacing focus
+- Competitive-friendly launch behavior
+- No Roblox client injection
+- No timing-hook patching
 
 Your aim stays your aim.
 
 ---
 
-### 🧊 RDD — Roblox Downgrade Downloader
-A real downgrade system that:
+### ⚡ Performance Tab + Anti-Lag Mode
 
-- Downloads **actual previous Roblox versions**  
-- Lets you launch any version instantly  
-- Warns you when launching outdated builds  
+A dedicated performance page for quick tuning.
+
+Anti-Lag mode applies an aggressive “potato mode” FastFlag profile for maximum FPS:
+
+- Graphics level 1
+- Lowest texture quality
+- Reduced/disabled shadows
+- Simple voxel-style lighting
+- Disabled post-processing where supported
+- FPS cap presets for 60, 144, 240, 360, and more
+
+Built for FPS games, low-end PCs, and anyone who wants Roblox to run as fast as possible.
+
+---
+
+### 🧊 RDD — Roblox Downgrade Downloader
+
+RDD lets you view and use recent deployed Roblox WindowsPlayer versions.
+
+It can:
+
+- Fetch recent Roblox player versions
+- Download selected older builds
+- Launch selected versions through Waterstrap
+- Warn clearly before launching outdated Roblox builds
+- Repair back to the latest Roblox version
 
 > **Outdated Roblox**  
 > Your version of Roblox is outdated.  
 > If you meant to use this version, press **Proceed**.  
 > Otherwise, use RDD to return to the latest version.
 
----
-
-### 🧩 Custom Editor for FFLAGS
-A built-in VS Code–style editor for:
-
-- FFlags  
-- JSON mods  
-- Custom patches  
-- Config presets  
-
-Syntax highlighting, auto-indent, and a clean dev experience.
+RDD is intended for debugging, performance regressions, and bad Roblox updates.
 
 ---
 
-### ⚡ Performance Tab + Anti-Lag Mode
-A dedicated performance suite:
+### 🧩 Custom FastFlag Editor
 
-- Anti-Lag mode  
-- Smart graphics optimization  
-- RAM + CPU priority tweaks  
-- GPU scheduling presets  
+Waterstrap includes a built-in editor for advanced configuration.
 
-Boost FPS without destroying visuals.
+- Table-based FastFlag editing
+- JSON editor mode
+- Syntax highlighting
+- Format, paste, copy, import, and export tools
+- Clean workflow for power users
+
+Perfect for FFlags, config presets, and advanced Roblox client settings.
 
 ---
 
 ### 🔒 Executor Detection
-Waterstrap checks for executors using a known database.
 
-If detected:
+Waterstrap includes transparent executor-process protection.
 
-- Roblox will **not** launch  
-- Waterstrap warns you  
-- We know we have an RDD, but please don't exploit. We're not forcing you, you can disable this feature in app settings.
+If enabled and an executor-like process is detected:
+
+- Roblox launch is blocked
+- Running Roblox can be closed
+- Waterstrap shows a warning
+- Protection can be disabled in settings
+
+RDD exists for rollback/debugging, not exploiting. Please don’t use Waterstrap to cheat.
 
 ---
 
-### 🖥️ Smooth Background Launching
-Roblox launches in the background, making Waterstrap feel:
+### 🪵 Roblox Logs + Crash Helper
 
-- Native  
-- Fast  
-- Clean  
-- Professional  
+Waterstrap can show Roblox logs in a readable always-on-top log window.
 
-No more ugly console windows.
+It also includes a crash helper that can show recent log output when Roblox exits unexpectedly.
+
+Useful for:
+
+- Debugging crashes
+- Reading Roblox logs
+- Diagnosing bad updates
+- Finding FastFlag or mod issues
+
+---
+
+### 🚀 Quick Launch
+
+Waterstrap can create a desktop shortcut named:
+
+**Roblox with Waterstrap**
+
+It launches Roblox directly through Waterstrap and replaces the default Roblox desktop launcher shortcut.
+
+The shortcut uses a Roblox-style icon with a Waterstrap plus badge.
 
 ---
 
@@ -85,56 +122,67 @@ No more ugly console windows.
 
 Waterstrap is built around:
 
-- Smooth animations  
-- Clean UI  
-- Water-themed aesthetic  
-- Vibe-coded personality  
-- FPS-first design  
-- Modern bootstrapper experience  
+- FPS-first design
+- Clean water-themed visuals
+- Smooth launch animation
+- Useful power-user tools
+- Roblox logs and diagnostics
+- FastFlag control
+- Version rollback support
+- A little bit of vibe-coded personality
 
-It’s not just a launcher — it’s a whole vibe.
+It’s not just a launcher. It’s a whole vibe.
 
 ---
 
 ## 📦 Installation
 
-1. Download the latest release from the **Releases** tab.  
-2. Run the installer.  
-3. Choose your settings.  
-4. Launch Roblox through Waterstrap.  
-5. Enjoy the smoothest FPS of your life.
+1. Download the latest Waterstrap release.
+2. Run `Waterstrap.exe`.
+3. Choose your install settings.
+4. Pick whether to add Quick Launch.
+5. Launch Roblox through Waterstrap.
+
+Waterstrap is designed for Windows PCs.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- C# / .NET  
-- Monaco Editor  
-- Custom FPS unlocker logic  
-- RDD version manager  
-- Water AI (GPT-powered)  
-- Modern UI framework  
+- C# / .NET 6
+- WPF
+- Wpf.Ui
+- AvalonEdit
+- Roblox deployment APIs
+- FastFlag-based performance tuning
+- Waterstrap RDD version manager
 
 ---
 
 ## 🗺️ Roadmap
 
-- Cloud sync for settings  
-- Plugin system  
-- Theme marketplace  
-- Mod manager with previews  
-- FPS graphs + performance analytics  
-- Auto-fix mode for Water AI  
+Planned ideas:
+
+- Plugin system
+- Mod manager with previews
+- FPS graphs and performance analytics
+- Cloud sync for settings
+- Theme marketplace
+- Better crash diagnostics
+- More game-focused presets
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests are welcome.  
-If you want to help build the best Roblox bootstrapper ever, jump in.
+Pull requests are welcome.
+
+If you want to help build the best Roblox bootstrapper for FPS players, jump in.
 
 ---
 
 ## 📜 License
 
-MIT License — do whatever you want, just don’t sell it as your own.
+MIT License.
+
+Do whatever you want, just don’t pretend you made the whole thing from scratch.
