@@ -34,7 +34,7 @@ A real downgrade system that:
 
 ---
 
-### 🧩 Monaco Editor for Mods + FFlags
+### 🧩 Custom Editor for FFLAGS
 A built-in VS Code–style editor for:
 
 - FFlags  
