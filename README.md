@@ -1,188 +1,82 @@
-# 🌊 Waterstrap
+﻿> [!CAUTION]
+> Waterstrap is a personal fork of Bloxstrap. Until an official Waterstrap release page exists, only trust builds you create from this repository.
 
-### *A vibe-coded, FPS-focused, overpowered Bloxstrap fork
+> [!IMPORTANT]
+> Waterstrap is under fork development.
 
-Waterstrap is a modern Roblox bootstrapper built for players who want more control over performance, FastFlags, local mods, Roblox versions, and launch behavior.
+<p align="center">
+    <img src="Images/Waterstrap-full-dark.png#gh-dark-mode-only" width="380">
+    <img src="Images/Waterstrap-full-light.png#gh-light-mode-only" width="380">
+</p>
 
-It takes the Bloxstrap idea and pushes it toward a cleaner, faster, FPS-first experience.
+<div align="center">
 
----
+[![License][shield-repo-license]][repo-license]
+[![GitHub Workflow Status][shield-repo-workflow]][repo-actions]
+[![Crowdin][shield-crowdin-status]][crowdin-project]
+[![Downloads][shield-repo-releases]][repo-releases]
+[![Version][shield-repo-latest]][repo-latest]
+[![Discord][shield-discord-server]][discord-invite]
+[![lol][shield-tenor-meme]][tenor-gif]
 
-## ✨ Features
+</div>
 
-### 🎮 FPS-Focused Unlocker
+----
 
-Waterstrap includes FPS-focused tuning for Roblox games where frame pacing matters.
+Waterstrap is a third-party replacement for the standard Roblox bootstrapper, providing additional useful features and improvements.
 
-- FPS cap presets
-- Smooth frame pacing focus
-- Competitive-friendly launch behavior
-- No Roblox client injection
-- No timing-hook patching
+Running into a problem or need help with something? Use this fork's issue tracker once the repository is published.
 
-Your aim stays your aim.
+Waterstrap is only supported for PCs running Windows.
 
----
+## Frequently Asked Questions
 
-### ⚡ Performance Tab + Anti-Lag Mode
+**Q: Is this malware?**
 
-A dedicated performance page for quick tuning.
+**A:** No. The source code here is viewable to all. Be careful with third-party downloads; build Waterstrap yourself until you publish trusted releases.
 
-Anti-Lag mode applies an aggressive “potato mode” FastFlag profile for maximum FPS:
+**Q: Can using this get me banned?**
 
-- Graphics level 1
-- Lowest texture quality
-- Reduced/disabled shadows
-- Simple voxel-style lighting
-- Disabled post-processing where supported
-- FPS cap presets for 60, 144, 240, 360, and more
+**A:** No, it shouldn't, as long as this fork stays in the bootstrapper/customization lane and does not patch Roblox binaries, inject into the client, or bypass anti-cheat.
+## Features
 
-Built for FPS games, low-end PCs, and anyone who wants Roblox to run as fast as possible.
+- Hassle-free Discord Rich Presence to let your friends know what you're playing at a glance
+- Simple support for modding of content files for customizability (death sound, mouse cursor, etc)
+- See where your server is geographically located (courtesy of [ipinfo.io](https://ipinfo.io))
+- Ability to configure graphics fidelity and UI experience
 
----
+## Installing
+Download a trusted Waterstrap build from https://waterstrap.vercel.app once the site is live, or build it locally from source.
 
-### 🧊 RDD — Roblox Downgrade Downloader
+You will also need the [.NET 6 Desktop Runtime](https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win11-x64&apphost_version=6.0.36&gui=true). If you don't already have it installed, you'll be prompted to install it anyway. Be sure to install Waterstrap after you've installed this.
 
-RDD lets you view and use recent deployed Roblox WindowsPlayer versions.
+It's not unlikely that Windows Smartscreen will show a popup when you run Waterstrap for the first time. This happens because it's an unknown program, not because it's actually detected as being malicious. To dismiss it, just click on "More info" and then "Run anyway".
 
-It can:
+Once installed, Waterstrap is added to your Start Menu, where you can access the menu and reconfigure your preferences if needed.
 
-- Fetch recent Roblox player versions
-- Download selected older builds
-- Launch selected versions through Waterstrap
-- Warn clearly before launching outdated Roblox builds
-- Repair back to the latest Roblox version
+## Code
 
-> **Outdated Roblox**  
-> Your version of Roblox is outdated.  
-> If you meant to use this version, press **Proceed**.  
-> Otherwise, use RDD to return to the latest version.
+Waterstrap uses the [WPF UI](https://github.com/lepoco/wpfui) library for the user interface design, via the Bloxstrap-maintained fork.
 
-RDD is intended for debugging, performance regressions, and bad Roblox updates.
 
----
+[shield-repo-license]:  https://img.shields.io/github/license/Waterstraplabs/Waterstrap
+[shield-repo-workflow]: https://img.shields.io/github/actions/workflow/status/Waterstraplabs/Waterstrap/ci-release.yml?branch=main&label=builds
+[shield-repo-releases]: https://img.shields.io/github/downloads/Waterstraplabs/Waterstrap/latest/total?color=981bfe
+[shield-repo-latest]:   https://img.shields.io/github/v/release/Waterstraplabs/Waterstrap?color=7a39fb
 
-### 🧩 Custom FastFlag Editor
+[shield-crowdin-status]: https://badges.crowdin.net/Waterstrap/localized.svg
+[shield-discord-server]: https://img.shields.io/discord/1099468797410283540?logo=discord&logoColor=white&label=discord&color=4d3dff
+[shield-tenor-meme]:     https://img.shields.io/badge/mom_made-pizza_rolls-orange
 
-Waterstrap includes a built-in editor for advanced configuration.
+[repo-license]:  https://github.com/Waterstraplabs/Waterstrap/blob/main/LICENSE
+[repo-actions]:  https://github.com/Waterstraplabs/Waterstrap/actions
+[repo-releases]: https://github.com/Waterstraplabs/Waterstrap/releases
+[repo-latest]:   https://github.com/Waterstraplabs/Waterstrap/releases/latest
 
-- Table-based FastFlag editing
-- JSON editor mode
-- Syntax highlighting
-- Format, paste, copy, import, and export tools
-- Clean workflow for power users
+[crowdin-project]: https://crowdin.com/project/Waterstrap
+[discord-invite]:  https://discord.gg/nKjV3mGq6R
+[tenor-gif]:       https://media.tenor.com/FIkSGbGycmAAAAAd/manly-roblox.gif
 
-Perfect for FFlags, config presets, and advanced Roblox client settings.
+## Code signing policy
 
----
-
-### 🔒 Executor Detection
-
-Waterstrap includes transparent executor-process protection.
-
-If enabled and an executor-like process is detected:
-
-- Roblox launch is blocked
-- Running Roblox can be closed
-- Waterstrap shows a warning
-- Protection can be disabled in settings
-
-RDD exists for rollback/debugging, not exploiting. Please don’t use Waterstrap to cheat.
-
----
-
-### 🪵 Roblox Logs + Crash Helper
-
-Waterstrap can show Roblox logs in a readable always-on-top log window.
-
-It also includes a crash helper that can show recent log output when Roblox exits unexpectedly.
-
-Useful for:
-
-- Debugging crashes
-- Reading Roblox logs
-- Diagnosing bad updates
-- Finding FastFlag or mod issues
-
----
-
-### 🚀 Quick Launch
-
-Waterstrap can create a desktop shortcut named:
-
-**Roblox with Waterstrap**
-
-It launches Roblox directly through Waterstrap and replaces the default Roblox desktop launcher shortcut.
-
-The shortcut uses a Roblox-style icon with a Waterstrap plus badge.
-
----
-
-## 🌀 Waterstrap Identity
-
-Waterstrap is built around:
-
-- FPS-first design
-- Clean water-themed visuals
-- Smooth launch animation
-- Useful power-user tools
-- Roblox logs and diagnostics
-- FastFlag control
-- Version rollback support
-- A little bit of vibe-coded personality
-
-It’s not just a launcher. It’s a whole vibe.
-
----
-
-## 📦 Installation
-
-1. Download the latest Waterstrap release.
-2. Run `Waterstrap.exe`.
-3. Choose your install settings.
-4. Pick whether to add Quick Launch.
-5. Launch Roblox through Waterstrap.
-
-Waterstrap is designed for Windows PCs.
-
----
-
-## 🛠️ Tech Stack
-
-- C# / .NET 6
-- WPF
-- Wpf.Ui
-- AvalonEdit
-- Roblox deployment APIs
-- FastFlag-based performance tuning
-- Waterstrap RDD version manager
-
----
-
-## 🗺️ Roadmap
-
-Planned ideas:
-
-- Plugin system
-- Mod manager with previews
-- FPS graphs and performance analytics
-- Cloud sync for settings
-- Theme marketplace
-- Better crash diagnostics
-- More game-focused presets
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome.
-
-If you want to help build the best Roblox bootstrapper for FPS players, jump in.
-
----
-
-## 📜 License
-
-MIT License.
-
-Do whatever you want, just don’t pretend you made the whole thing from scratch.
+Thanks to [SignPath.io](https://signpath.io/) for providing a free code signing service, and the [SignPath Foundation](https://signpath.org/) for providing the free code signing certificate.
