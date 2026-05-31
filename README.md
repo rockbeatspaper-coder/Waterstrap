@@ -1,5 +1,5 @@
 ﻿> [!CAUTION]
-> Waterstrap is a personal fork of Bloxstrap. Until an official Waterstrap release page exists, only trust builds you create from this repository.
+> Waterstrap is a personal fork of Bloxstrap.
 
 > [!IMPORTANT]
 > Waterstrap is under fork development.
@@ -11,15 +11,10 @@
 
 <div align="center">
 
-[![License][shield-repo-license]][repo-license]
-[![GitHub Workflow Status][shield-repo-workflow]][repo-actions]
-[![Crowdin][shield-crowdin-status]][crowdin-project]
-[![Downloads][shield-repo-releases]][repo-releases]
-[![Version][shield-repo-latest]][repo-latest]
-[![Discord][shield-discord-server]][discord-invite]
-[![lol][shield-tenor-meme]][tenor-gif]
 
+[![Discord][shield-discord-server]][discord-invite]
 </div>
+                                     >>>>> OFFICIAL DISCORD OF BLOXSTRAP, THE FORK <<<<<
 
 ----
 
