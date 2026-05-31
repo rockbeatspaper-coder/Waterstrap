@@ -1,6 +1,6 @@
 # 🌊 Waterstrap
 
-### *A vibe-coded, FPS-focused, overpowered Bloxstrap fork — built with GPT 5.5 Extra High energy.*
+### *A vibe-coded, FPS-focused, overpowered Bloxstrap fork
 
 Waterstrap is a modern Roblox bootstrapper built for players who want more control over performance, FastFlags, local mods, Roblox versions, and launch behavior.
 
